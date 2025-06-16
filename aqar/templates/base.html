@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'user/css/base.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <a href="{% url "home" %}">
+                    <img src="{% static 'user/img/logo_almas_3.png' %}" alt="" width="250px">
+                </a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">أصحاب العقار</a></li>
+                    <li><a href="#">طلب عقد إلكتروني</a></li>
+                    <li><a href="#">تواصل معنا</a></li>
+                    <li><a href="#">من نحن</a></li>
+                </ul>
+            </div>
+            <div class="buttons">
+                <button>إضافة عقار</button>
+                <button>تسجيل الدخول</button>
+            </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </div>
+    </header>
+</body>
+</html>
